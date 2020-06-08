@@ -13,7 +13,7 @@ CRUD operations with MongoDB database locally and on the ## Atlas platform (in t
 
 Server-side website rendering with ## Pug templates
 
-Using the ## MVC (Model-View-Controller) architecture
+Using the ##MVC (Model-View-Controller) architecture
 
 Complete modern authentication with ## JWT
 
