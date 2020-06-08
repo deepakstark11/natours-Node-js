@@ -1,6 +1,6 @@
 # Natours Application 
 
-Built using modern technologies: node.js, express, mongoDB, mongoose
+Built using modern technologies: node.js, express, mongoDB, mongoose  https://natours-stark.herokuapp.com/
 
 # Features
 RESTful API design and development with advanced features:  
@@ -52,7 +52,7 @@ Check the tour you have booked in "Manage Booking" page in your user settings. Y
 You can update your own username, profile photo, email and password.
 
 # 📚 API Usage
-Check Natours API Documentation for more info.
+Check Natours API Documentation for more info. https://documenter.getpostman.com/view/11080659/SzzdC1NQ
 
 # 🔨 Build With
 * NodeJS - JS runtime environment
