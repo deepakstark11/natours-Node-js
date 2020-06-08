@@ -28,7 +28,6 @@ const createSendToken = (user, statusCode, req, res) => {
     httpOnly: true,
     secure: req.secure || req.headers('x-forwarded-proto') === 'https'
   });
-  
 
   user.password = undefined;
 
@@ -55,7 +54,7 @@ exports.signup = catchAsync(async (req, res, next) => {
   //console.log(url);
   await new Email(newUser, url).sendWelcome();
 
-  createSendToken(newUser, 2req,;
+  createSendToken(newUser, 201, req, res);
 });
 
 exports.login = catchAsync(async (req, res, next) => {
@@ -72,7 +71,7 @@ exports.login = catchAsync(async (req, res, next) => {
   }
 
   //if everything is okay send the token
-  createSendToken(user, 200, req);
+  createSendToken(user, 200, req, res);
 });
 
 exports.protect = catchAsync(async (req, res, next) => {
@@ -226,7 +225,7 @@ exports.resetPassword = catchAsync(async (req, res, next) => {
   //update the passwordAt property refer .pre in usermodel
 
   //log the user in send jwt
-  createSendToken(user, 200,req, res);
+  createSendToken(user, 200, req, res);
 });
 
 exports.updatePassword = catchAsync(async (req, res, next) => {
@@ -241,5 +240,5 @@ exports.updatePassword = catchAsync(async (req, res, next) => {
   user.passwordConfirm = req.body.passwordConfirm;
   await user.save();
   //4)log user in,send jwt
-  createSendToken(user, 200,req, res);
+  createSendToken(user, 200, req, res);
 });
