@@ -11,11 +11,11 @@ RESTful API design and development with advanced features:
 
 CRUD operations with MongoDB database locally and on the ## Atlas platform (in the cloud)
 
-Server-side website rendering with ## Pug templates
+Server-side website rendering with Pug templates
 
-Using the ##MVC (Model-View-Controller) architecture
+Using the MVC (Model-View-Controller) architecture
 
-Complete modern authentication with ## JWT
+Complete modern authentication with JWT
 
 Deploying Node.js application to production with ## Heroku
 
