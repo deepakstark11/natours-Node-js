@@ -66,3 +66,4 @@ Check Natours API Documentation for more info. https://documenter.getpostman.com
 * Postman - API testing
 * Mailtrap & Sendgrid - Email delivery platform
 * Heroku - Cloud platform
+* Multer - File Uploads
